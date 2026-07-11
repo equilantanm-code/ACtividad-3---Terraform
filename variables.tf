@@ -7,13 +7,13 @@ variable "mi_ip_publica" {
 variable "ami_id_app" {
   type        = string
   description = "ID de la AMI para el servidor de App (Nginx + Node.js)"
-  default     = "ami-xxxxxxxxxxxxxxxxx" # <-- PEGA AQUÍ TU AMI DEL SERVIDOR DE APP
+  default     = "ami-02b45bd5337cf4c7d"
 }
 
 variable "ami_id_mongodb" {
   type        = string
   description = "ID de la AMI para el servidor MongoDB"
-  default     = "ami-xxxxxxxxxxxxxxxxx" # <-- PEGA AQUÍ TU AMI DE MONGODB
+  default     = "ami-0c3539676939c5315"
 }
 
 variable "key_name" {

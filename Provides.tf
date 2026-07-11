@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1" # Cambia esto por la región donde guardaste tu AMI
+  region = "us-east-1" 
 }

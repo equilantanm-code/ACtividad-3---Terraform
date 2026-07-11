@@ -90,7 +90,7 @@ resource "aws_route_table_association" "private" {
 # ─── Security Groups ──────────────────────────────────────────────────────────
 # SG para el Load Balancer: acepta tráfico HTTP/HTTPS del mundo
 resource "aws_security_group" "sg_alb" {
-  name        = "sg-alb-mean"
+  name        = "secgroup-alb-mean"
   description = "Permite trafico HTTP y HTTPS entrante al Load Balancer"
   vpc_id      = aws_vpc.main.id
 
@@ -115,12 +115,12 @@ resource "aws_security_group" "sg_alb" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags = { Name = "sg-alb" }
+  tags = { Name = "secgroup-alb" }
 }
 
 # SG para el servidor de App (Nginx + Node.js)
 resource "aws_security_group" "sg_app" {
-  name        = "sg-app-mean"
+  name        = "secgroup-app-mean"
   description = "Permite SSH desde mi IP y trafico desde el ALB"
   vpc_id      = aws_vpc.main.id
 
@@ -155,12 +155,12 @@ resource "aws_security_group" "sg_app" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags = { Name = "sg-app" }
+  tags = { Name = "secgroup-app" }
 }
 
 # SG para MongoDB: solo acepta conexiones desde el servidor de App
 resource "aws_security_group" "sg_mongodb" {
-  name        = "sg-mongodb-mean"
+  name        = "secgroup-mongodb-mean"
   description = "Permite MongoDB solo desde el servidor de App"
   vpc_id      = aws_vpc.main.id
 
@@ -187,5 +187,5 @@ resource "aws_security_group" "sg_mongodb" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags = { Name = "sg-mongodb" }
+  tags = { Name = "secgroup-mongodb" }
 }
