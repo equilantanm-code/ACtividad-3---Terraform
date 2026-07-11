@@ -13,7 +13,7 @@ variable "ami_id_app" {
 variable "ami_id_mongodb" {
   type        = string
   description = "ID de la AMI para el servidor MongoDB"
-  default     = "ami-0c3539676939c5315"
+  default     = "ami-0b9f194596a5bb769"
 }
 
 variable "key_name" {
