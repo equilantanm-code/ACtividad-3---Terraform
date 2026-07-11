@@ -1,0 +1,93 @@
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+module.mi_red.aws_vpc.main: Creating...
+module.mi_red.aws_vpc.main: Still creating... [00m10s elapsed]
+module.mi_red.aws_vpc.main: Creation complete after 14s [id=vpc-0086edce063d34966]
+module.mi_red.aws_internet_gateway.igw: Creating...
+module.mi_red.aws_subnet.public_2: Creating...
+module.mi_red.aws_subnet.public_1: Creating...
+module.mi_red.aws_subnet.private: Creating...
+module.mi_red.aws_security_group.sg_alb: Creating...
+module.mi_balanceador.aws_lb_target_group.tg_app: Creating...
+module.mi_red.aws_internet_gateway.igw: Creation complete after 1s [id=igw-0e4719d7eec5baf07]
+module.mi_red.aws_eip.nat: Creating...
+module.mi_red.aws_route_table.public: Creating...
+module.mi_red.aws_subnet.private: Creation complete after 1s [id=subnet-03bc49af2d63a905f]
+module.mi_balanceador.aws_lb_target_group.tg_app: Creation complete after 1s [id=arn:aws:elasticloadbalancing:us-east-1:533266998784:targetgroup/tg-app-mean/2fae5d5af0099900]
+module.mi_red.aws_route_table.public: Creation complete after 2s [id=rtb-01cf54d8449b1d793]
+module.mi_red.aws_eip.nat: Creation complete after 2s [id=eipalloc-09cb11bd5aed1974d]
+module.mi_red.aws_security_group.sg_alb: Creation complete after 3s [id=sg-06e7444d023addc6e]
+module.mi_red.aws_security_group.sg_app: Creating...
+module.mi_red.aws_security_group.sg_app: Creation complete after 4s [id=sg-06dbf1d216d2c8936]
+module.mi_red.aws_security_group.sg_mongodb: Creating...
+module.mi_red.aws_subnet.public_2: Still creating... [00m10s elapsed]
+module.mi_red.aws_subnet.public_1: Still creating... [00m10s elapsed]
+module.mi_red.aws_security_group.sg_mongodb: Creation complete after 3s [id=sg-0cd6759a5ee331353]
+module.mi_computo.aws_instance.servidor_mongodb: Creating...
+module.mi_red.aws_subnet.public_2: Creation complete after 12s [id=subnet-0125d054947a448dd]
+module.mi_red.aws_route_table_association.public_2: Creating...
+module.mi_red.aws_subnet.public_1: Creation complete after 12s [id=subnet-0c31a58535a50fb3d]
+module.mi_red.aws_route_table_association.public_1: Creating...
+module.mi_red.aws_nat_gateway.nat: Creating...
+module.mi_balanceador.aws_lb.alb_mean: Creating...
+module.mi_computo.aws_instance.servidor_app: Creating...
+module.mi_red.aws_route_table_association.public_2: Creation complete after 0s [id=rtbassoc-079f7bb8e523b64a2]
+module.mi_red.aws_route_table_association.public_1: Creation complete after 0s [id=rtbassoc-0f57dd8a0a101747d]
+module.mi_computo.aws_instance.servidor_mongodb: Still creating... [00m10s elapsed]
+module.mi_red.aws_nat_gateway.nat: Still creating... [00m10s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [00m10s elapsed]
+module.mi_computo.aws_instance.servidor_app: Still creating... [00m10s elapsed]
+module.mi_computo.aws_instance.servidor_mongodb: Still creating... [00m20s elapsed]
+module.mi_red.aws_nat_gateway.nat: Still creating... [00m20s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [00m20s elapsed]
+module.mi_computo.aws_instance.servidor_app: Still creating... [00m20s elapsed]
+module.mi_computo.aws_instance.servidor_mongodb: Still creating... [00m30s elapsed]
+module.mi_red.aws_nat_gateway.nat: Still creating... [00m30s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [00m30s elapsed]
+module.mi_computo.aws_instance.servidor_app: Still creating... [00m30s elapsed]
+module.mi_computo.aws_instance.servidor_mongodb: Creation complete after 33s [id=i-032fbe58a3000bcd2]
+module.mi_computo.aws_instance.servidor_app: Creation complete after 33s [id=i-062a0d0cd95b1455c]
+module.mi_balanceador.aws_lb_target_group_attachment.app_attachment: Creating...
+module.mi_balanceador.aws_lb_target_group_attachment.app_attachment: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:533266998784:targetgroup/tg-app-mean/2fae5d5af0099900-20260711233537421200000005]
+module.mi_red.aws_nat_gateway.nat: Still creating... [00m40s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [00m40s elapsed]
+module.mi_red.aws_nat_gateway.nat: Still creating... [00m50s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [00m50s elapsed]
+module.mi_red.aws_nat_gateway.nat: Still creating... [01m00s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [01m00s elapsed]
+module.mi_red.aws_nat_gateway.nat: Still creating... [01m10s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [01m10s elapsed]
+module.mi_red.aws_nat_gateway.nat: Still creating... [01m20s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [01m20s elapsed]
+module.mi_red.aws_nat_gateway.nat: Still creating... [01m30s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [01m30s elapsed]
+module.mi_red.aws_nat_gateway.nat: Creation complete after 1m35s [id=nat-011d706a4643f4035]
+module.mi_red.aws_route_table.private: Creating...
+module.mi_red.aws_route_table.private: Creation complete after 2s [id=rtb-00c0d1cb02de6df6f]
+module.mi_red.aws_route_table_association.private: Creating...
+module.mi_red.aws_route_table_association.private: Creation complete after 0s [id=rtbassoc-006a84a0ece752ad6]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [01m40s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [01m50s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [02m00s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [02m10s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [02m20s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [02m30s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [02m40s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Still creating... [02m50s elapsed]
+module.mi_balanceador.aws_lb.alb_mean: Creation complete after 2m53s [id=arn:aws:elasticloadbalancing:us-east-1:533266998784:loadbalancer/app/alb-mean-stack/6a6823a08fc87ca2]
+module.mi_balanceador.aws_lb_listener.listener_http: Creating...
+module.mi_balanceador.aws_lb_listener.listener_http: Creation complete after 0s [id=arn:aws:elasticloadbalancing:us-east-1:533266998784:listener/app/alb-mean-stack/6a6823a08fc87ca2/20cbcdef5155a49c]
+
+Apply complete! Resources: 21 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+dns_balanceador = "alb-mean-stack-2108481449.us-east-1.elb.amazonaws.com"
+ip_privada_mongodb = "10.0.3.166"
+ip_privada_servidor_app = "10.0.1.199"
+ip_publica_nat_gateway = "34.238.94.15"
+ip_publica_servidor_app = "3.236.184.62"
