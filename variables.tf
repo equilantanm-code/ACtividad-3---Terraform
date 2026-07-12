@@ -19,7 +19,7 @@ variable "ami_id_mongodb" {
 variable "key_name" {
   type        = string
   description = "Nombre del Key Pair de AWS para acceso SSH a las instancias"
-  default     = "mi-keypair" # <-- PEGA AQUÍ EL NOMBRE DE TU KEY PAIR EN AWS
+  default     = "mi-keypair" # <-- nombre que le di a mi par de llaves
 }
 
 variable "region" {
